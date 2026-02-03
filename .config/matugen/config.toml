@@ -1,0 +1,18 @@
+[config]
+
+[templates.hyprland]
+input_path = './templates/hyprland-colors.conf'
+output_path = '~/.config/hypr/colors.conf'
+
+[templates.alacritty]
+input_path = './templates/alacritty-colors.toml'
+output_path = '~/.config/alacritty/colors.toml'
+
+[templates.rofi]
+input_path = './templates/rofi-colors.rasi'
+output_path = '~/.config/rofi/colors.rasi'
+
+[templates.zsh]
+input_path = "./templates/zsh-colors.zsh"
+output_path = "~/.config/zsh/zsh-colors.zsh"
+
