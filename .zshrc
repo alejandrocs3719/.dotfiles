@@ -8,6 +8,8 @@ if [[ -f $XDG_CONFIG_HOME/zsh/zsh-colors.zsh ]]; then
   source $XDG_CONFIG_HOME/zsh/zsh-colors.zsh
 fi
 
+# Emacs mode by default
+bindkey -e # This is needed because the EDITOR env variable string contains "vi"
 
 # load modules
 zmodload zsh/complist
@@ -33,7 +35,8 @@ setopt globdots # include dotfiles
 setopt extended_glob # match ~ # ^
 setopt interactive_comments # allow comments in shell
 unsetopt prompt_sp # don't autoclean blanklines
-stty stop undef # disable accidental ctrl s
+#stty stop undef # disable accidental ctrl s
+stty -ixon
 
 # history opts
 HISTSIZE=1000000

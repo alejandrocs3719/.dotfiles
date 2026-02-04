@@ -2,5 +2,7 @@ alias \
 \
 c="clear" \
 v="nvim" \
-cat="bat"
+cat="bat" \
+ip="curl ifconfig.me" \
+
 
