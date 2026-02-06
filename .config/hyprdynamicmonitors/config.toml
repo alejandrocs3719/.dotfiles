@@ -11,8 +11,7 @@ object_path = "/org/freedesktop/UPower/devices/line_power_ACAD"
 
 
 
-
-# Setup 1
+# Setup 1 
 [profiles.Setup1]
 config_file = "/home/alejandro/.config/hyprdynamicmonitors/hyprconfigs/Setup1.go.tmpl"
 config_file_type = "template"
@@ -27,6 +26,20 @@ description = "Microstep MAG321UX OLED"
 monitor_tag = "primary"
 
 [[profiles.Setup1.conditions.required_monitors]]
+description = "BNQ BenQ RL2455 56E05187SL0"
+monitor_tag = "secondary"
+
+# Desktop setup 
+[profiles.desktop]
+config_file = "/home/alejandro/.config/hyprdynamicmonitors/hyprconfigs/Setup1.go.tmpl"
+config_file_type = "template"
+[profiles.desktop.conditions]
+
+[[profiles.desktop.conditions.required_monitors]]
+description = "Microstep MAG321UX OLED"
+monitor_tag = "primary"
+
+[[profiles.desktop.conditions.required_monitors]]
 description = "BNQ BenQ RL2455 56E05187SL0"
 monitor_tag = "secondary"
 
